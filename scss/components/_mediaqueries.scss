@@ -1,0 +1,1288 @@
+//  mq tablet
+
+@media screen and (min-width:730px) {
+
+
+// inicio estilos pagina principal 
+
+
+    .body-principal{
+        height: 100%;
+    }
+
+
+    .header-inicio {
+        margin: 1.5rem;
+        justify-content: center;
+        .container-fluid {
+            flex-direction: column;
+            .logo-container {
+                @include medidas (7rem, 3.8rem);
+                margin-bottom: 1rem;
+            }
+        }
+        .listado {
+            .nav-item {
+                margin: 1.5rem;
+                width: 15rem;
+                margin-bottom: 0rem;
+                justify-content: center;
+                align-items: center;
+                justify-self: center;
+                align-self: center;
+                border-radius: 200px 0px 200px 0px;
+                .nav-link{
+                    font-size: 1rem;
+                    line-height: 1rem;
+                }
+                .nav-link:hover{
+                    transform: scale(1.2);
+                }   
+                .dropdown-menu {
+                    background-color: $color-secundario;
+                    border-radius: 50px;
+                    .dropdown-item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 0.9rem;
+                        width: 5rem;
+                        color: $color-secundario;
+                        
+                    }    
+                }
+            }
+        }
+    }
+
+
+
+// estilos contenedor main pagina principal vista tablet
+
+
+
+.inicio{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas: "int-titulo texto-boton";
+    .int-titulo {
+        grid-area: int-titulo;
+        @include medidas (75vh, 85vw);
+        margin: 2rem;
+        margin-right: 0rem;
+        border-radius: 58px 0px 0px 58px;
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        grid-template-areas: 
+                    "interaccion titulo" ;
+        .interaccion{
+            grid-area: interaccion;
+            justify-content: center;
+            align-items: start;
+            padding: 1rem;
+            .interaccion-img {
+                @include medidas (2rem, 2rem);
+                margin: 0.3rem;
+            }
+        }
+        .titulo {
+            grid-area: titulo;
+            font-size: 3.5rem;
+            transform: rotate(270deg);
+            justify-self: center;
+            align-self: center;
+            height: 19rem;   
+        }
+    }
+    .texto-boton{
+        grid-area: texto-boton;
+        height: 85vw;
+        width: 16rem;
+        margin: 2rem;
+        margin-left: 0rem;
+        border-radius: 0px 58px 58px 0px;
+        .texto{
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            border-top: none;
+            border-left: 0.3rem solid $color-secundario;
+            text-align: start;
+            display: flex;
+            width: 13rem;
+            margin-top: 4rem;
+            padding: 1rem 2.5rem;  
+        }
+        .boton{
+            grid-area: boton;
+            @include medidas (10rem, 2.3rem); 
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin: 1rem;
+            a {
+                font-size: 1rem;
+                padding: 0.2rem;
+            }
+        }
+    }
+}
+
+
+
+// estilos contenedor footer pagina principal vista tablet
+
+
+.footer-inicio{
+    margin: 3.5rem;
+    .div-footer-inicio {
+        h2 {
+            font-size: 0.9rem;
+            margin: 1rem;   
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem; 
+            }
+    } 
+}
+    
+    .div2-inicio {
+        margin: 1.2rem;
+        h4 {
+          font-size: 0.8rem;  
+        }
+        
+    }
+
+    .div4-inicio {
+        display: none;
+    }
+}
+
+
+
+
+// incio estilos pagina nosotros vista tablet
+
+
+@media screen and (min-width:730px) {
+
+    .header-paginas {
+        justify-content: center;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                justify-content: center;
+                align-items: center;
+                .nav-link {
+                   font-size: 1rem; 
+                }
+                .nav-link:hover {
+                    transform: scale(1.2);
+                }
+                .dropdown-menu {
+                   .dropdown-item {
+                        width: 5rem;
+                        font-size: 0.9rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+
+
+// estilos contenedor main pagina nosotros   
+
+
+    .nosotros {
+        .titulo-nosotros {
+            font-size: 3.5rem;
+            padding-top: 2rem;
+        }    
+        .nosotros-sec {
+            background-color: $color-secundario;
+            height: 15rem;
+            .somos {
+                display: grid;
+                justify-content: center;
+                align-items: start;
+                grid-template-columns: 3fr 7fr;
+                grid-template-areas: "nosotros-text foto-nosotros";
+                .nosotros-text {
+                    grid-area: nosotros-text;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-cuarto;
+                    margin-top: 1.5rem;
+                    @include medidas (43vh, 70vw);
+                    padding: 2rem 2.5rem 2rem 2rem;
+                    text-align: right;
+                    font-size: 1.08rem;
+                }
+                .foto-nosotros {
+                    grid-area: foto-nosotros;
+                    margin: 1.5rem 5rem;
+                    margin-left: 0rem;
+                    @include medidas (70vh, 70vw);
+                    border-radius: 0rem;
+                }
+            }
+            .abrimos {
+                height: 25rem;
+                h2 {
+                font-size: 3rem;
+                margin-top: 3rem;
+                }
+                .div-abrimos {
+                    display: grid;
+                    margin-top: 5rem;
+                    grid-template-columns: 2fr 1fr;
+                    grid-area: "video texto-video";
+                    .video {
+                        margin: 0rem;
+                        margin-right: 3rem;
+                        grid-area: video;
+                        .video-pretos {
+                            @include medidas (50vh, 70vw);
+                            border-radius: 0rem;
+                        }
+                    }
+                    .texto-video {
+                        grid-area: texto-video;
+                        background-color: $color-terciario;
+                        color: $color-principal;
+                        @include medidas (42vh, 70vw);
+                        margin-left: 20rem;
+                        margin-top: 0rem;
+                        padding: 2rem 2rem 2rem 2.5rem;
+                        font-size: 1.08rem;
+                        text-align: start;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+        }
+    }
+
+
+
+    // estilos contenedor footer pagina nosotros 
+
+
+    .footer {
+        margin-top: 83rem;
+        padding: 2rem;
+        height: 18rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1rem; 
+                margin-top: 2.5rem;
+
+            }
+            h3 {
+                font-size: 0.75rem;
+                margin-bottom: 0.2rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.7rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              padding-left: 2rem;  
+            }
+        }
+    }
+    
+}
+
+
+// inicio estilos pagina servicios vista tablet
+
+@media screen and (min-width:730px) {
+
+    .header-pag {
+        justify-content: center;
+        .paginas {
+            width: 100%;
+            flex-direction: row;
+        }
+        .lista {
+            .nav-item {
+                margin-left: 1rem;
+                .nav-link {
+                   font-size: 1rem; 
+                }
+                .nav-link:hover{
+                    transform: scale(1.2);
+                }  
+                .dropdown-menu {
+                   .dropdown-item {
+                    width: 5rem;
+                    font-size: 0.9rem;
+                    
+                    }   
+                }    
+            }
+        }
+    }
+
+
+    // estilos contenedor main pagina servicios
+
+
+    .main-servicios {
+        .nuestros-servicios {
+            font-size: 3.5rem;
+            width: 100%;
+        }
+        .sec-servicios {
+            display: grid;
+            height: 90rem;
+            width: 100%;
+            background-color: $color-secundario;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "contenedor-azul contenedor-amarillo contenedor-azulino";
+            .contenedor-azul {
+                grid-area: contenedor-azul;
+                background-color: $color-secundario;
+                margin: 0rem;
+                padding-top: 11rem;
+                .club-servicios {
+                    @include medidas (40vh, 235vw);
+                    margin: 0.5rem;
+                    margin-top: 42rem;
+                    .club {
+                        align-self: start;  
+                        .club-img {
+                            @include medidas (12rem, 12rem);
+                            margin-top: 3.5rem;
+                            margin-left: 0rem;
+                            padding: 0rem;
+                            border-radius: 50px;
+                        }
+                        }
+                        .h2-uno {
+                            margin: 2rem;
+                            a {
+                              font-size: 2rem;
+                              padding: 3rem;
+                              padding-bottom: 1.5rem;
+                            }
+                        }
+                        .contenedor-uno {
+                            margin: 0rem;
+                            padding: 1.5rem;
+                            .p-uno {
+                                font-size: 1.08rem;  
+                            }   
+                        } 
+                }
+            }
+            .contenedor-amarillo {
+                grid-area: contenedor-amarillo;
+                padding-top: 0rem;
+                height: 90rem;
+                width: 100%;
+                .bar-servicios {
+                    @include medidas (40vh, 140vw);
+                    margin: 0.5rem;
+                    .h2-dos {
+                        margin: 3rem;
+                        a {
+                          font-size: 2rem;
+                          padding: 3rem;
+                            padding-bottom: 1.5rem;   
+                        }
+                    }
+                    .contenedor-dos {
+                        margin: 0rem;
+                        padding: 1.5rem;
+                        .p-dos {
+                            font-size: 1.08rem;  
+                        }   
+                    }
+                    .bar {
+                        .bar-img {
+                            @include medidas (12rem, 12rem);
+                            padding: 1rem;
+                            border-radius: 50px;
+                        }
+                    }
+                      
+                }
+            }
+            .contenedor-azulino {
+                grid-area: contenedor-azulino;
+                background-color: $color-secundario;
+                padding-top: 5rem;
+                height: 60rem;
+                width: 100%;
+                .eventos-servicios {
+                    @include medidas (40vh, 235vw);
+                    margin: 0.5rem;
+                        .eventos {
+                            align-self: end;
+                            .eventos-img {
+                                @include medidas (12rem, 12rem);
+                                padding: 1rem;
+                                padding-right: 0rem;
+                                border-radius: 50px;
+                            } 
+                        }
+                        .h2-tres {
+                            margin: 3rem;
+                            a {
+                              font-size: 2rem;
+                              padding: 1.5rem;
+                            }
+                        }
+                            .contenedor-tres {
+                                margin: 0rem;
+                                padding: 1.5rem;
+                                .p-tres {
+                                    font-size: 1.08rem;  
+                                }   
+                            }    
+                }
+            }  
+        }
+        .boton-sec {
+            background-color: $color-secundario;
+            .contactanos {
+                @include medidas (11rem, 4rem);
+                a {
+                    font-size: 1rem;
+                    color: $color-principal;
+                }
+            }       
+        }                     
+    }
+
+
+
+    // estilos contenedor footer pagina servicios
+
+
+    .footer-servicios {
+        margin-top: 5rem;
+        padding: 2rem;
+        height: 18rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        grid-template-areas: "div-footer div4"
+                            "div2 div4";
+        .div-footer {
+            grid-area: div-footer;
+            text-align: center;
+            h2 {
+                text-align: center;
+                font-size: 0.9rem;
+                margin-bottom: 1rem; 
+                margin-top: 2.5rem;
+
+            }
+            h3 {
+                font-size: 0.75rem;
+                margin-bottom: 0.2rem; 
+                }
+        } 
+        .div2{
+            grid-area: div2;
+            text-align: center;
+            margin-bottom: 2rem;
+            h4 {
+              font-size: 0.7rem;  
+            }
+        }
+    
+        .div4 {
+            grid-area: div4;
+            a img {
+              padding-left: 2rem;  
+            }
+        }
+    }
+}
+
+
+
+
+// incio estilos pagina galeria vista tablet 
+
+
+
+@media screen and (min-width:730px) {
+
+    .galeria-fotos {
+        height: 50rem;
+        .titulo-galeria {
+            font-size: 3.5rem;
+            margin-bottom: 5rem;
+        }
+        .c-galeria {
+            .club-galeria {
+                a {
+                    font-size: 2.5rem; 
+              }
+            }
+            .foto-club {
+                .img-club {
+                    @include medidas (18rem, 18rem);
+                    border-radius: 160px;
+                }
+            }
+        }
+        .carousel {
+            height: 34rem;
+            width: 45rem;
+            padding: 2rem 7.5rem;
+            .carousel-inner {
+                padding: 0rem;
+                .carousel-item {
+                    @include medidas (30rem, 32rem);
+                } 
+            }
+        }
+        .b-galeria{
+            margin-top: 6rem;
+            background-color: $color-secundario;
+            .foto-bar {
+                padding: 1rem;
+                margin-top: 4rem;
+                .img-bar {
+                    @include medidas (18rem, 18rem);
+                    border-radius: 160px;
+                }
+            }
+            .bar-galeria {
+                a {
+                    font-size: 2.5rem; 
+            }
+            }
+        }
+        .div-bar {
+            background-color: $color-secundario;
+            height: 34rem;
+            width: 46rem;
+            padding: 2rem 7.5rem;
+            .carousel-inner {
+                padding: 0rem;
+                .carousel-item {
+                    @include medidas (31rem, 32rem);
+                } 
+            }
+        }
+        .e-galeria {
+            padding: 7rem 0rem 4rem 0rem;
+            .eventos-galeria {
+                a {
+                    font-size: 2.5rem;
+            }
+            }
+            .foto-eventos {
+                .img-eventos {
+                    @include medidas (18rem, 18rem);
+                    border-radius: 160px;
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+
+
+// incio estilos pagina contacto vista tablet 
+
+
+
+@media screen and (min-width:730px) {
+    .contacto {
+        margin: 5rem 2rem;
+        .planoInfo{
+            .plano{
+                margin: 7rem auto;
+                height: 25rem;
+            }
+            .datos{
+                margin-top: 10rem;
+                .datos1{
+                    font-size: 0.95rem;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    ul li{
+                        padding: 0.5rem;
+                        margin: 0rem; 
+                    }
+                }
+                .horario {
+                    font-size: 0.95rem;
+                    width: 14rem;
+                    margin-top: 1.2rem;
+                    margin-left: 2rem;
+                    line-height: 2rem;
+                    
+                }
+            }  
+        }
+        
+        .formulario{
+            @include medidas (19rem, 34rem);
+            margin-top: 3rem;
+            .contenedor-form {
+                .titulo-form{
+                    font-size: 1.5rem;
+                    padding: 1.5rem 1rem 0.5rem 1rem;
+                }
+                .div-lin{
+                    margin: 1.5rem 1rem 0rem 1rem; 
+                    border-bottom: solid 0.2rem $color-cuarto;
+                    color: $color-cuarto;
+                    font-size: 1rem;
+                    .nombre{
+                        width: 12.1rem;
+                        height: 1rem;
+                        
+                    }
+                    .email{
+                        width: 13rem;
+                        height: 1rem;
+                            
+                    }
+                    .telefono{
+                        width: 11rem;
+                        height: 1rem;
+                        
+                    }
+                    .mensaje{
+                        width: 12rem;
+                        height: 1rem;
+                    }
+                }
+                .l-interes {
+                    font-size: 1rem;
+                    .la-interes{
+                        margin: 1.6rem 1rem 0.2rem 1rem; 
+                        border-bottom: solid 0.2rem $color-cuarto;  
+                    }
+                    .interes{
+                        @include medidas (3.5rem, 1.1rem);
+                        border: none;
+                        position: absolute;
+                        top: 14.5rem;
+                        left: 13.8rem;
+                        color: $color-cuarto;
+                        font-size: 0.9rem;
+                    }
+                }
+                .div-terms {
+                    .terms{
+                        @include medidas (15rem, 2rem);
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                        margin-left: 1.2rem;     
+                    }
+                    .checkbox{
+                        margin-top: 2.5rem;
+                    }
+                }
+                .div-submit {
+                    height: 8rem;
+                    .enviar{
+                        font-size: 0.9rem;
+                        @include medidas (6rem, 3rem)
+                    }
+                    .borrar{
+                        font-size: 0.9rem;
+                        @include medidas (12rem, 3rem);
+                    }
+                }     
+            }
+        }
+        .interaccionContacto{
+            height: 8rem;
+            margin-top: 2rem;
+            a img{
+                @include medidas (2.5rem, 2.5rem);
+            }
+        }
+    }
+}
+    
+
+
+
+//  mq desktop 
+
+
+
+@media screen and (min-width:1024px) {
+
+
+// inicio estilos pagina principal vista desktop 
+
+
+    .header-inicio {
+        margin: 2rem;
+        .container-fluid {
+            .logo-container {
+                @include medidas (8rem, 4rem);
+            }
+        }
+        .listado {
+            .nav-item {
+                margin: 2rem;
+                margin-bottom: 0rem;
+                .nav-link{
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+                .nav-link:hover{
+                    transform: scale(1.3);
+                }   
+                .dropdown-menu {
+                    .dropdown-item {
+                        font-size: 1.1rem;
+                        line-height: 0.7rem;
+                    }    
+                }
+            }
+        }
+    }
+
+
+
+
+    // estilos contenedor main pagina principal vista desktop
+
+    .inicio{
+        .int-titulo {
+            @include medidas (97vh, 70vw);
+            .interaccion{
+                .interaccion-img {
+                    @include medidas (2.5rem, 2.5rem);
+                    margin: 0.5rem;
+                }
+            }
+            .titulo {
+                font-size: 4rem;
+                height: 27.5rem;   
+            }
+        }
+        .texto-boton{
+            height: 70vw;
+            width: 19.5rem;
+            .texto{
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                width: 17rem;
+                padding: 2rem 3rem;  
+            }
+            .boton{
+                @include medidas (12rem, 2.5rem);
+                margin: 2rem;
+                a {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+
+// estilos contenedor footer pagina principal vista desktop
+
+
+.footer-inicio{
+    margin: 4rem;
+    .div-footer-ini {
+        h2 {
+            font-size: 1rem;
+            margin: 1.2rem;   
+        }
+        h3 {
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem; 
+            }
+    } 
+}
+    
+    .div2-inicio {
+        margin: 1.5rem;
+        h4 {
+          font-size: 0.9rem;  
+        }
+        
+    }
+
+}
+
+
+// incio estilos pagina nosotros vista desktop
+
+@media screen and (min-width:1024px) {
+
+    .header-paginas {
+        justify-content: start;
+        .lista {
+            .nav-item {
+                .nav-link {
+                   font-size: 1.2rem; 
+                }
+                .nav-link:hover{
+                    transform: scale(1.3);
+                } 
+                .dropdown-menu {
+                   .dropdown-item {
+                    font-size: 1.1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+// estilos contenedor main pagina nosotros   
+
+    .nosotros {
+        .titulo-nosotros {
+            font-size: 4rem;
+        }    
+        .nosotros-sec {
+            .somos {
+                .nosotros-text {
+                    margin: 2rem 3rem;
+                    margin-right: 0rem;
+                    @include medidas (52vh, 51vw);
+                    padding: 2rem 3.5rem 2rem 2rem;
+                    font-size: 1.2rem;
+                }
+                .foto-nosotros {
+                    padding-right: 6rem;
+                    margin: 2rem 5rem;
+                    margin-left: 0rem;
+                    @include medidas (60vh, 51vw);
+                }
+            }
+            .abrimos {
+                h2 {
+                font-size: 3.5rem;
+                }
+                .div-abrimos {
+                    margin-left: 5rem;
+                    .video {
+                        .video-pretos {
+                            @include medidas (80vh, 51vw);
+                        }
+                    }
+                    .texto-video {
+                        @include medidas (50vh, 51vw);
+                        margin-left: 32rem;
+                        margin-right: 2rem;
+                        padding: 2rem 2rem 2rem 3.5rem;
+                        font-size: 1.2rem;
+                        text-align: start;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+        }
+    }
+
+
+    // estilos contenedor footer pagina nosotros 
+
+    .footer {
+        margin-top: 85rem;
+        padding: 2.5rem;
+        height: 22rem;
+        .div-footer {
+            h2 {
+                font-size: 1rem;
+                margin-bottom: 1.5rem; 
+                margin-top: 4rem;
+
+            }
+            h3 {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            h4 {
+              font-size: 0.85rem;  
+            }
+        }
+    }
+    
+}
+
+// inicio estilos pagina servicios vista desktop
+
+@media screen and (min-width:1024px) {
+
+    .header-pag {
+        justify-content: end;
+        .lista {
+            .nav-item {
+                .nav-link {
+                   font-size: 1.2rem; 
+                }
+                .nav-link:hover{
+                    transform: scale(1.3);
+                } 
+                .dropdown-menu {
+                   .dropdown-item {
+                    display: block;
+                    text-align: start;
+                    font-size: 1rem;
+                    line-height: 0.6rem;
+                    }   
+                }    
+            }
+        }
+    }
+
+
+    // estilos contenedor main pagina servicios
+
+
+    .main-servicios {
+        .nuestros-servicios {
+            font-size: 4rem;
+            width: 100%;
+        }
+        .sec-servicios {
+            height: 98rem;
+            .contenedor-azul {
+                padding-top: 23rem;
+                .club-servicios {
+                    @include medidas (45vh, 235vw);
+                    margin: 1rem;
+                    margin-top: 40rem;
+                    .club {
+                        .club-img {
+                            @include medidas (18rem, 18rem);
+                        }
+                        }
+                        .h2-uno {
+                            margin: 3rem;
+                            a {
+                              font-size: 3rem;
+                            }
+                        }
+                        .contenedor-uno {
+                            .p-uno {
+                                font-size: 1.2rem;  
+                            }   
+                        } 
+                }
+            }
+            .contenedor-amarillo {
+                padding-top: 15rem;
+                .bar-servicios {
+                    @include medidas (45vh, 140vw);
+                    margin: 1rem;
+                    .h2-dos {
+                        a {
+                          font-size: 3rem;
+                          padding: 3.5rem;
+                            padding-bottom: 1.5rem;    
+                        }
+                    }
+                    .contenedor-dos {
+                        .p-dos {
+                            font-size: 1.2rem;  
+                        }   
+                    }
+                    .bar {
+                        .bar-img {
+                            @include medidas (20rem, 20rem);
+                        }
+                    }
+                      
+                }
+            }
+            .contenedor-azulino {
+                .eventos-servicios {
+                    @include medidas (45vh, 235vw);
+                        .eventos {
+                            .eventos-img {
+                                @include medidas (20rem, 20rem);
+                            } 
+                        }
+                        .h2-tres {
+                            margin: 2.5rem;
+                            a {
+                              font-size: 3rem; 
+                            }
+                        }
+                            .contenedor-tres {
+                                .p-tres {
+                                    font-size: 1.2rem;  
+                                }   
+                            }    
+                }
+            }  
+        }
+        .boton-sec {
+            .contactanos {
+                @include medidas (12rem, 4.5rem);
+                a {
+                    font-size: 1.1rem;
+                }
+            }       
+        }                     
+    }
+
+
+
+    // estilos contenedor footer pagina servicios
+
+
+    .footer-servicios {
+        margin-top: 7rem;
+        padding: 2.5rem;
+        height: 22rem;
+        .div-footer {
+            h2 {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+
+            }
+            h3 {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem; 
+                }
+        } 
+        .div2{
+            h4 {
+              font-size: 0.85rem;  
+            }
+        }
+    }
+}
+
+
+// incio estilos pagina galeria vista desktop 
+
+
+@media screen and (min-width:1024px) {
+
+    .galeria-fotos {
+        height: 70rem;
+        .titulo-galeria {
+            font-size: 4rem;
+            margin-bottom: 6rem;
+        }
+        .c-galeria {
+            padding-top: 1rem;
+            .club-galeria {
+                a {
+                    font-size: 3rem; 
+                }
+            }
+            .foto-club {
+                .img-club {
+                    @include medidas (20rem, 20rem);
+                }
+            }
+        }
+        .carousel {
+            height: 40rem;
+            width: 63rem;
+            .carousel-inner {
+                padding: 2rem 5.5rem;
+                .carousel-item {
+                    @include medidas (37rem, 35rem);
+                    
+                } 
+            }
+        }
+        .b-galeria{
+            margin-top: 12rem;
+            background-color: $color-principal;
+            .foto-bar {
+                padding: 2rem;
+                margin-top: 3rem;
+                .img-bar {
+                    @include medidas (20rem, 20rem)
+                }
+            }
+            .bar-galeria {
+                a {
+                    font-size: 3rem; 
+                }
+            }
+        }
+        .div-bar {
+            height: 40rem;
+            width: 64rem;
+            .carousel-inner { 
+                padding: 2rem 5.5rem;
+                .carousel-item {
+                    @include medidas (37rem, 35rem);
+                } 
+            }
+        }
+        .e-galeria {
+            padding: 12rem;
+            padding-bottom: 0rem;
+            .eventos-galeria {
+                a {
+                    font-size: 3rem;
+                }
+        
+            }
+        }
+            .foto-eventos {
+                .img-eventos {
+                    @include medidas (20rem, 20rem);
+                }
+            }
+    }
+}
+
+
+
+
+// incio estilos pagina contacto vista desktop 
+
+
+
+@media screen and (min-width:1024px) {
+    .contacto {
+        margin: 6rem 3rem;
+        .planoInfo{
+            .plano{
+                margin: 9rem auto;
+                height: 35rem;
+            }
+            .datos{
+                margin-top: 7rem;
+                margin-left: 2rem;
+                .datos1{
+                    font-size: 1.2rem;
+                    margin-left: 2.5rem;
+                    ul li{
+                        padding: 1rem; 
+                    }
+                }
+                .horario {
+                    font-size: 1.2rem;
+                    width: 15rem;
+                    margin-top: 1.8rem;
+                    margin-left: 2.5rem;
+                    line-height: 3rem;
+                    
+                }
+            }  
+        }
+        
+        .formulario{
+            @include medidas (25rem, 45rem);
+            margin-top: 4rem;
+            .contenedor-form {
+                .titulo-form{
+                    font-size: 2rem;
+                    padding: 2rem 1.5rem 1rem 1.5rem;
+                }
+                .div-lin{
+                    margin: 2rem 1.5rem 0rem 1.5rem;
+                    font-size: 1.3rem;
+                    .nombre{
+                        width: 15.5rem;
+                        height: 1.2rem;
+                        
+                    }
+                    .email{
+                        width: 16.8rem;
+                        height: 1.2rem;
+                            
+                    }
+                    .telefono{
+                        width: 14.5rem;
+                        height: 1.2rem;
+                        
+                    }
+                    .mensaje{
+                        width: 15.5rem;
+                        height: 1.2rem;
+                    }
+                }
+                .l-interes {
+                    font-size: 1.3rem;
+                    .la-interes{
+                        margin: 2rem 1.5rem 0.2rem 1.5rem;  
+                    }
+                    .interes{
+                        @include medidas (5rem, 1.5rem);
+                        top: 19rem;
+                        left: 17.5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+                .div-terms {
+                    .terms{
+                        @include medidas (15rem, 3rem);
+                        font-size: 1.3rem;
+                        margin-top: 2rem;
+                        margin-left: 1.2rem;     
+                    }
+                    .checkbox{
+                        margin-top: 4rem;
+                        margin-left: 2rem;
+                        @include medidas (1.2rem, 1.2rem);
+                    }
+                }
+                .div-submit {
+                    height: 11rem;
+                    margin: 1rem;
+                    .enviar{
+                        font-size: 1.1rem;
+                        @include medidas (8rem, 4rem)
+                    }
+                    .borrar{
+                        font-size: 1.1rem;
+                        @include medidas (15rem, 4rem);
+                        margin-left: 1rem;
+                    }
+                }     
+            }
+        }
+        .interaccionContacto{
+            margin: 2rem;
+            a img{
+                @include medidas (3rem, 3rem);
+                margin: 1.3rem;
+            }
+        }
+    }
+}
+
